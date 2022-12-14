@@ -10,7 +10,7 @@ public class SellerService {
 	
 	private SellerDao dao = DaoFactory.createSellerDao();
 	
-	public List<Seller> finAll() {
+	public List<Seller> findAll() {
 		
 		return dao.findAll();
 	}
