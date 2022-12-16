@@ -86,7 +86,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			throw new IllegalStateException("Service was null");
 
 		}
-		List<Department> list = service.finAll();
+		List<Department> list = service.findAll();
 		obsList = FXCollections.observableArrayList(list);
 		tableViewDepartment.setItems(obsList);
 		initEditButtons();
